@@ -1,0 +1,60 @@
+@import '../../assets/styles/variables';
+
+.characters-card {
+  display: flex;
+  flex-direction: column;
+  width: 172px;
+
+  &__img-content {
+    &__img {
+      height: 190px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-top: 5px solid $marvel-red;
+
+    &__name {
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__favorite {
+      width: 12px;
+      height: 12px;
+
+      img {
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    &__triangle {
+      position: absolute;
+      right: -1px;
+      bottom: -1px;
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-bottom: 12px solid white;
+    }
+  }
+}
+
+@include tablet {}
+
+@include desktop {}

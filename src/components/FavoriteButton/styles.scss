@@ -1,0 +1,21 @@
+.favorite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  &__button {
+    background: 'none';
+    border: 'none';
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__number {
+    margin-left: 8px;
+    font-size: 16px;
+  }
+}

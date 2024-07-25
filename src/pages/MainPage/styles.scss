@@ -1,0 +1,51 @@
+@import '../../assets/styles/variables';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+
+  &__title-favorites {
+    margin-top: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
+
+@include tablet {
+  .main {
+    margin-top: 24px;
+
+    &__title-favorites {
+      margin-top: 24px;
+      padding-left: 48px;
+      padding-right: 48px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 37.5px;
+      text-align: left;
+    }
+  }
+}
+
+@include desktop {
+  .main {
+    margin-top: 24px;
+
+    &__title-favorites {
+      margin-top: 24px;
+      padding-left: 48px;
+      padding-right: 48px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 37.5px;
+      text-align: left;
+    }
+  }
+}

@@ -7,7 +7,7 @@ Este repositorio contiene una plantilla básica para un proyecto de React utiliz
 Asegúrate de tener instaladas las siguientes herramientas en tu máquina:
 
 - [Node.js](https://nodejs.org/) (versión 20.14.0)
-- [npm](https://classic.yarnpkg.com/en/docs/install) (versión 10.7.0)
+- [npm](https://www.npmjs.com/) (versión 10.7.0)
 
 ## Clonar el Repositorio
 

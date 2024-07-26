@@ -5,10 +5,15 @@ import { charactersMock, characterMock, characterComicsMock } from '../mocks';
 import { IResponseCharacterComics } from '../../interfaces/character-comics.interface';
 import { IResponseMarvelApi } from '../../interfaces/character.interface';
 
-const isMockActive = import.meta.env.VITE_MODE;
+import dotenv from 'dotenv';
 
-const apikey: any = import.meta.env.VITE_PUBLIC_KEY;
-const privateKey: any = import.meta.env.VITE_PRIVATE_KEY;
+try {
+  dotenv.config();
+} catch (error) {}
+
+const isMockActive = process.env.VITE_MODE;
+const apikey: any = process.env.VITE_PUBLIC_KEY;
+const privateKey: any = process.env.VITE_PRIVATE_KEY;
 const ts = new Date().getTime();
 const hash = md5(`${ts}${privateKey}${apikey}`).toString();
 

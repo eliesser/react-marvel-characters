@@ -59,7 +59,3 @@ export const SearchWrapper = ({
     </form>
   );
 };
-
-SearchWrapper.propTypes = {
-  searchCharacters: PropTypes.func.isRequired,
-};

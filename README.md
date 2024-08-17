@@ -32,7 +32,7 @@ VITE_PRIVATE_KEY = tu_clave_privada_de_api_de_marvel
 Instala las dependencias del proyecto utilizando Yarn:
 
 ```bash
-yarn install
+npm install
 ```
 
 ## Ejecución del Proyecto en Modo Desarrollo

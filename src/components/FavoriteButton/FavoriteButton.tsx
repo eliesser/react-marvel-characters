@@ -26,6 +26,7 @@ export const FavoriteButton = ({
         ) : (
           <img src={favoriteInactiveIcon} />
         )}
+
         {numberVisible && (
           <span className='favorite__number'>{favoritesLength}</span>
         )}
